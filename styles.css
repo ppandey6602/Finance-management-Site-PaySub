@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+}
+
+body{
+ background: #f5f1da;
+}
+
+/* Navigation Bar Styling */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Jockey One', sans-serif;
+  color: #f6f6f6;
+  background:  #270082;
+}
+
+.brand {
+  color: #5F6F94;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.nav ul li a {
+  color: #5F6F94;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 6px;
+}
+
+.ham {
+  display: none;
+}
+
+.ham div {
+  width: 23px;
+  height: 3px;
+  background-color: #5F6F94;
+  margin: 4px;
+}
+
+/* Homepage Styling */
+#home {
+  display: flex;
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem;
+  background: #E94560;
+}
+
+.one {
+  color: #f6f6f6;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.two {
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px;
+}
+
+.money {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Expense Analyser Section Styling */
+#expense-analyser{
+ font-family: 'Righteous', cursive;
+ margin: 40px 160px;
+}
+
+.descript{
+ text-align: center;
+}
+
+#analyser {
+  border-radius: 20px;
+  box-shadow: 20px 20px 20px black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #270082;
+  color: #f6f6f6;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+#analyser form {
+  padding-left: 100px;
+}
+
+#salary{
+ border-radius: 10px;
+}
+
+#spendings{
+ border-radius: 10px;
+}
+
+#display{
+ display: block;
+ margin-left: 100px;
+ width: 50%;
+ border-radius: 1rem;
+ position: static;
+}
+
+.btn{
+ padding: 3px 5px;
+ border-radius: 7px;
+ display: inline-block;
+ border: 1mm ridge #E94560;
+ margin: 0;
+ text-decoration: none;
+ background: #f5f1da;
+ color: #000;
+ font-family: sans-serif;
+ font-size: 15px;
+ cursor: pointer;
+ text-align: center;
+ width: fit-content;
+ height: 50%;
+}
+
+/* Apps Section Styling */
+.apps{
+ font-family: 'Righteous', cursive;
+ text-align: center;
+ background: #E94560;
+ color: #f6f6f6;
+ width: 100%;
+ padding: 50px 100px;
+ 
+}
+
+.shadow{
+ background: #f5f1da;
+ box-shadow: 10px 10px 10px black;
+ border-radius: 10px;
+ color: #E94560;
+ width: fit-content;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+
+.carousel-item{
+ width: 350px;
+ margin: 0 auto;
+}
+
+.btnA{
+ padding: 7px 9px;
+ border-radius: 10px;
+ display: inline-block;
+ border: 2mm ridge #b2ebf2;
+ margin: 0;
+ text-decoration: none;
+ background: #f5f1da;
+ color: #e3dfc8;
+ font-family: sans-serif;
+ font-size: 32px;
+ font-weight: bold;
+ cursor: pointer;
+ text-align: center;
+ width: fit-content;
+ height: 50%;
+}
+
+.btnA:hover {
+ color: white;
+ background: #FFE700;
+ box-shadow: 0 0 10px #FFE700, 0 0 40px #FFE700, 0 0 80px #FFE700;
+ transition-delay: 0.01s;
+}
+
+/* Footer Styling */
+.footer{
+ text-align: center;
+ font-family: 'Righteous', cursive;
+ padding: 75px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+  .nav ul {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    font-size: large;
+  }
+  .links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #270082;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .ham {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+}
